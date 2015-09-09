@@ -1,0 +1,66 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="scripts/quizlib.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/quizlib.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
+        
+        <title>SRC Example</title>
+    </head>
+
+    <body>
+        <!-- Quiz Results -->
+        <div id="quiz-result" class="card">
+            You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br/>
+            <span id="reaction"></span><br />
+
+        </div>
+        
+        <!-- Quiz Container -->
+        <div id="quiz">
+            <!-- Question 1 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">1. How much water does one person need for hydration and hygiene for one day?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q1" value="a"> 8 glasses</label></li>
+                        <li><label><input type="radio" name="q1" value="b"> 1 gallon</label></li>
+                        <li><label><input type="radio" name="q1" value="c"> 2 gallons</label></li>
+                        <li><label><input type="radio" name="q1" value="d"> I only drink beer</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">2. Your enemy's father...</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="radio" name="q2" value="a"> is a hamster</label></li>
+                        <li><label><input type="radio" name="q2" value="b"> smells of elderberries</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="card quizlib-question">
+                <div class="quizlib-question-title">3. Which factors will contribute to the end of humanity as we know it?</div>
+                <div class="quizlib-question-answers">
+                    <ul>
+                        <li><label><input type="checkbox" name="q3" value="a"> Global warming</label></li>
+                        <li><label><input type="checkbox" name="q3" value="b"> The release of Linux 4.1.15</label></li>
+                        <li><label><input type="checkbox" name="q3" value="c"> Cats</label></li>
+                        <li><label><input type="checkbox" name="q3" value="d"> Advancements in artificial intelligence</label></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Answer Button -->
+            <button type="button" onclick="showResults();">Check Answers</button>
+        </div>
+    </body>
+</html>
